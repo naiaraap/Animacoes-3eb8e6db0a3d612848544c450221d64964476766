@@ -50,7 +50,7 @@
         <!--Navigation Controller-->
         <scene sceneID="YVa-LY-mmY">
             <objects>
-                <navigationController navigationBarHidden="YES" id="59T-FL-0v3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navigation" navigationBarHidden="YES" id="59T-FL-0v3" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="x7E-2k-Heu">
                         <autoresizingMask key="autoresizingMask"/>
@@ -71,7 +71,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zW0-E8-sUm">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zW0-E8-sUm">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="165"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alura viagens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvb-Jz-M6F">
@@ -250,7 +250,6 @@
                         <viewLayoutGuide key="safeArea" id="2kX-4T-bV8"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="zW0-E8-sUm" firstAttribute="top" secondItem="WjL-lJ-Qmv" secondAttribute="top" id="3q3-CH-5tR"/>
                             <constraint firstItem="rBi-Xo-TkK" firstAttribute="bottom" secondItem="2kX-4T-bV8" secondAttribute="bottom" id="7xE-sf-zXU"/>
                             <constraint firstItem="rBi-Xo-TkK" firstAttribute="trailing" secondItem="2kX-4T-bV8" secondAttribute="trailing" id="HN3-c9-lRd"/>
                             <constraint firstItem="rBi-Xo-TkK" firstAttribute="top" secondItem="5WA-ko-dqC" secondAttribute="bottom" constant="15" id="Jl2-Ln-9bB"/>
@@ -269,6 +268,7 @@
                             </constraint>
                             <constraint firstAttribute="trailing" secondItem="zW0-E8-sUm" secondAttribute="trailing" id="fQE-Pb-K1t"/>
                             <constraint firstItem="zW0-E8-sUm" firstAttribute="leading" secondItem="WjL-lJ-Qmv" secondAttribute="leading" id="lq3-jG-rsN"/>
+                            <constraint firstItem="zW0-E8-sUm" firstAttribute="top" secondItem="WjL-lJ-Qmv" secondAttribute="top" id="qpy-Ox-Km9"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="yhj-ft-dmS"/>
@@ -438,14 +438,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uup-E0-iFM">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="185"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="185" id="QJf-Bs-zD0">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="250"/>
-                                    </constraint>
-                                </constraints>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6r-Zf-0fL">
+                                <rect key="frame" x="16" y="35" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon_back.png"/>
+                                <connections>
+                                    <action selector="botaoVoltar:" destination="BUu-9U-9li" eventType="touchUpInside" id="3x1-3J-mpj"/>
+                                </connections>
+                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRT-Vu-p3f">
                                 <rect key="frame" x="16" y="185" width="361" height="633"/>
                                 <subviews>
@@ -756,14 +756,14 @@
                                     <constraint firstAttribute="trailing" secondItem="cE6-q4-S07" secondAttribute="trailing" id="wXZ-7F-N7F"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6r-Zf-0fL">
-                                <rect key="frame" x="16" y="35" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="icon_back.png"/>
-                                <connections>
-                                    <action selector="botaoVoltar:" destination="BUu-9U-9li" eventType="touchUpInside" id="3x1-3J-mpj"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uup-E0-iFM">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="QJf-Bs-zD0">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MTN-9v-FRX"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -962,7 +962,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="k5C-ie-BbF">
             <objects>
-                <tabBarController id="iS5-FW-n3o" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="iS5-FW-n3o" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="RSl-ta-PXd"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oQW-EB-G5s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>

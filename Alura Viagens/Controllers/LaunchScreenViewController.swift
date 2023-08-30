@@ -27,12 +27,16 @@ class LaunchScreenViewController: UIViewController {
     UIView.animate(withDuration: 1.0, animations: {
       self.view.layoutIfNeeded()
     }) { (success) in
-//      UIView.animate(withDuration: 0.5, animations: {
-//        self.titleLabel.alpha = 0
-//      }, completion: { (success) in
-//        self.goToMainScreen()
-//      })
+      self.goToHome()
     }
+  }
+  
+  func goToHome() {
+    let tabBar = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
+    let navigation = UINavigationController(rootViewController: tabBar)
+    navigation.setNavigationBarHidden(true, animated: false)
+    navigation.modalPresentationStyle = .fullScreen
+    present(navigation, animated: true, completion: nil)
   }
     /*
     // MARK: - Navigation
