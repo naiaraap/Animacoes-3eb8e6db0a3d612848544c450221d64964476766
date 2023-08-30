@@ -16,13 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launch-screen" translatesAutoresizingMaskIntoConstraints="NO" id="YEv-E7-Kvf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-screen" translatesAutoresizingMaskIntoConstraints="NO" id="YEv-E7-Kvf">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alura Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae7-k6-x5g">
-                                <rect key="frame" x="97" y="479" width="198" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alura Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae7-k6-x5g">
+                                <rect key="frame" x="97.666666666666686" y="479" width="198" height="41"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -30,6 +28,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YEv-E7-Kvf" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="53i-fB-3hn"/>
+                            <constraint firstAttribute="bottom" secondItem="YEv-E7-Kvf" secondAttribute="bottom" id="7kS-yV-h48"/>
+                            <constraint firstItem="YEv-E7-Kvf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DMt-Y1-uwI"/>
+                            <constraint firstItem="YEv-E7-Kvf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K35-Wp-0En"/>
+                            <constraint firstItem="Ae7-k6-x5g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="420" id="RRN-6H-wyx"/>
+                            <constraint firstItem="Ae7-k6-x5g" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zdk-mG-rVp"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

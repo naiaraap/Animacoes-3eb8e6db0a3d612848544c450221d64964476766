@@ -40,6 +40,7 @@
 		0388B02F20DC19EF005F6A7C /* icon_hotel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0388B01E20DC19EF005F6A7C /* icon_hotel.png */; };
 		0388B03120DC1B62005F6A7C /* PacoteViagemDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0388B03020DC1B62005F6A7C /* PacoteViagemDao.swift */; };
 		4CA0BB412A9E6A24008B3F20 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0BB402A9E6A24008B3F20 /* Validator.swift */; };
+		4CA5094D2A9F871600DAFA20 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5094C2A9F871600DAFA20 /* LaunchScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		0388B01E20DC19EF005F6A7C /* icon_hotel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hotel.png; sourceTree = "<group>"; };
 		0388B03020DC1B62005F6A7C /* PacoteViagemDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacoteViagemDao.swift; sourceTree = "<group>"; };
 		4CA0BB402A9E6A24008B3F20 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		4CA5094C2A9F871600DAFA20 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				030997B420E12DF0009ECA38 /* PacotesViagensViewController.swift */,
 				030B69CE20E153BA006B5424 /* DetalhesViagemViewController.swift */,
 				036A96D020E168DB002EC6AA /* ConfirmacaoPagamentoViewController.swift */,
+				4CA5094C2A9F871600DAFA20 /* LaunchScreenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				0388B00A20DC177A005F6A7C /* PacoteViagem.swift in Sources */,
 				4CA0BB412A9E6A24008B3F20 /* Validator.swift in Sources */,
 				036A96D120E168DB002EC6AA /* ConfirmacaoPagamentoViewController.swift in Sources */,
+				4CA5094D2A9F871600DAFA20 /* LaunchScreenViewController.swift in Sources */,
 				0388B00620DC156E005F6A7C /* PacotesCollectionViewCell.swift in Sources */,
 				03715B3F20DC06BB00F2250A /* ViewController.swift in Sources */,
 				0388B03120DC1B62005F6A7C /* PacoteViagemDao.swift in Sources */,
